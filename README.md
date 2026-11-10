@@ -4,8 +4,6 @@ Official code for **Part-Aware Descriptor Classifier for Trustworthy Species Det
 
 PADC is a hybrid fine-grained classification framework that fuses classical shape descriptors, part-level quality metrics, and deep visual features. A segmentation module localizes anatomical parts; geometric, appearance, and inter-part descriptors are extracted and combined with backbone embeddings through a gated fusion module.
 
-**Paper:** `paper/PADC/main.tex` in the [BeeMachine Codes](https://github.com/kddresearch/BeeMachine) workspace (local path: `Codes/paper/PADC/`).
-
 **Datasets evaluated:** Beemachine (bees), CUB (birds), Fish-Vista (fish).
 
 ---
