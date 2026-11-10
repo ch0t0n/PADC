@@ -136,7 +136,8 @@ class PartWholeMultiTaskDataset(Dataset):
         mask_dict = {}
         for lbl in self.part_labels:
             for fname in mask_files:
-                if lbl in fname:
+                # Exact match: a substring test put every part file of the Grosbeak species into the "beak" slot ("Grosbeak" contains "beak").
+                if fname == f"{image_stem}_{lbl}.png":
                     mask_dict[lbl] = os.path.join(mask_class_dir, fname)
 
         mask = np.zeros((self.image_size, self.image_size), dtype=np.int64)
